@@ -40,6 +40,8 @@ export const SearchForm = ({ setResult, setLoading }) => {
     // const url = `https://axesso-walmart-data-service.p.rapidapi.com/wlm/walmart-search-by-keyword?keyword=${productToSearch.search}&page=1&sortBy=best_match`;
 
     getProductos(formData, setResult, setLoading)
+
+    setFormData({search: ''})
     
   };
 

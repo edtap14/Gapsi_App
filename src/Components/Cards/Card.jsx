@@ -1,9 +1,16 @@
 import React from "react";
 import style from "./card.module.css";
-import { Button } from "@mui/material";
+import { Button, Rating } from "@mui/material";
 
-export const Card = ({ image, price, description, productName, addProduct, deleteProduct }) => {
-
+export const Card = ({
+  image,
+  price,
+  description,
+  productName,
+  addProduct,
+  deleteProduct,
+  rating,
+}) => {
   return (
     <div className={style.cardBox}>
       <div className={style.imageBox}>
@@ -17,22 +24,24 @@ export const Card = ({ image, price, description, productName, addProduct, delet
         <div>
           <span className={style.descriptionProduct}>{description}</span>
         </div>
-        
+      </div>
+      <div>
+        <Rating name="half-rating-read" value={rating} readOnly />
       </div>
       <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Button variant="outlined" color="success" onClick={addProduct}>
-            Agregar al carrito
-          </Button>
-          <Button variant="outlined" color="error" onClick={deleteProduct}>
-            Eliminar del carrito
-          </Button>
-        </div>
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Button variant="outlined" color="success" onClick={addProduct}>
+          Agregar al carrito
+        </Button>
+        <Button variant="outlined" color="error" onClick={deleteProduct}>
+          Eliminar del carrito
+        </Button>
+      </div>
     </div>
   );
 };
