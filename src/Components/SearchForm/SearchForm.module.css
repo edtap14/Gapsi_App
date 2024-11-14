@@ -1,0 +1,19 @@
+.inputSearch{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: blue;
+    font-size: large;
+    text-align: center;
+}
+
+::placeholder {
+    color:rgb(20, 19, 19);
+    opacity: 0.5;
+    font-size: large;
+    text-align: center;
+}
+
+.error{
+    color: red;
+}

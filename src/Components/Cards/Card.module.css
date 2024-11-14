@@ -1,0 +1,58 @@
+.cardBox {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imageBox{
+    height: 150px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.image{
+    width: 130px;
+}
+
+.boxData{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxName{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.nameProduct{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.priceProduct{
+    color:cadetblue;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.descriptionProduct {
+    text-align: center;
+    color: black;
+    opacity: 0.8;
+}

@@ -1,0 +1,16 @@
+.divNavBar{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: beige;
+    width: 100%;
+}
+
+.imgeLogo{
+    margin-left: 20px;
+}
+
+.shopingCartDiv{
+    margin-right: 30px;
+}
